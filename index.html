@@ -8,8 +8,10 @@
 
 body{
 margin:0;
-font-family:Arial, Helvetica, sans-serif;
+font-family: "Calibri Light", Calibri, "Segoe UI", Helvetica, sans-serif;
 background:#f2f2f2;
+font-size:15px;
+line-height:1.5;
 }
 
 .container{
@@ -17,7 +19,24 @@ width:1100px;
 margin:40px auto;
 background:white;
 display:flex;
-box-shadow:0 4px 15px rgba(0,0,0,0.2);
+box-shadow:0 8px 25px rgba(0,0,0,0.15);
+border-radius:8px;
+overflow:hidden;
+}
+
+.main a{
+color:#0b5394;
+text-decoration:none;
+font-weight:500;
+}
+
+.main a:hover{
+text-decoration:underline;
+}
+
+.main strong{
+display:block;
+margin-top:20px;
 }
 
 .sidebar{
@@ -32,27 +51,17 @@ width:70%;
 padding:40px;
 }
 
-.nombre{
-font-size:26px;
-font-weight:bold;
-margin-bottom:5px;
-}
-
 .titulo{
-font-size:22px;
-font-weight:bold;
+font-size:23px;
+font-weight:600;
 border-bottom:2px solid #243b5a;
 margin-top:30px;
 margin-bottom:15px;
 padding-bottom:5px;
 }
-
-.titulo-sidebar{
-font-weight:bold;
-margin-top:20px;
-margin-bottom:10px;
-border-bottom:1px solid rgba(255,255,255,0.4);
-padding-bottom:4px;
+.sidebar p{
+line-height:1.5;
+font-size:14px;
 }
 
 .item{
@@ -76,6 +85,28 @@ ul{
 padding-left:18px;
 }
 
+details summary::marker{
+color:#0b5394;
+}
+
+.titulo-sidebar{
+font-size:18px;
+font-weight:600;
+margin-top:25px;
+margin-bottom:10px;
+border-bottom:1px solid rgba(255,255,255,0.3);
+padding-bottom:5px;
+}
+
+.nombre{
+font-size:32px;
+font-weight:600;
+letter-spacing:0.5px;
+margin-bottom:10px;
+border-bottom:2px solid rgba(255,255,255,0.3);
+padding-bottom:10px;
+}
+
 .foto{
 width:140px;
 height:140px;
@@ -85,6 +116,33 @@ margin-bottom:20px;
 border:3px solid white;
 }
 
+details {
+margin-bottom: 10px;
+padding: 10px;
+border-left: 3px solid #0b5394;
+background-color: #f7f7f7;
+border-radius: 4px;
+transition: all 0.3s ease;
+}
+
+details:hover{
+background:#e9f0f8;
+}
+
+details[open] {
+background-color:#eef3f9;
+}
+
+summary {
+font-weight: bold;
+cursor: pointer;
+color: #0b5394;
+font-size:15px;
+}
+
+details ul {
+margin-top: 8px;
+}
 </style>
 
 </head>
@@ -99,6 +157,10 @@ border:3px solid white;
 
 <div class="nombre">Benjamín Juan Carlos Blanco Ferri</div>
 
+<div style="font-size:14px; opacity:0.9; margin-top:6px;">
+Diplomacia Económica | Integración Regional | Negociaciones Comerciales Internacionales
+</div>
+
 <div class="titulo-sidebar">Contacto</div>
 
 <p>
@@ -106,8 +168,8 @@ Email: bblancof@gmail.com
 </p>
 
 <p>
-<a href="https://www.linkedin.com/in/bblancof" target="_blank">
-LinkedIn
+<a href="https://www.linkedin.com/in/bblancof" target="_blank" style="color:white;text-decoration:none;">
+LinkedIn: linkedin.com/in/bblancof
 </a>
 </p>
 
@@ -192,92 +254,164 @@ Ha participado en negociaciones comerciales con la Unión Europea, la Comunidad 
 
 <div class="titulo">Experiencia en Docencia</div>
 
+
 <p><strong>Universidad Andina Simón Bolívar</strong></p>
 <ul>
 <li>Miembro Titular del Consejo Superior (2021)</li>
 <li>Docente de Programas de Maestría (2019 – presente)</li>
 </ul>
 
-<p><strong>Programas de Maestría impartidos</strong></p>
+<h3>Programas de Maestría impartidos</h3>
 
+<details>
+<summary>Maestría en Integración, Comercio Internacional y Gestión Aduanera</summary>
 <ul>
-<li>Maestría en Integración, Comercio Internacional y Gestión Aduanera</li>
-<li>Maestría en Administración de Empresas</li>
-<li>Maestría en Administración de Empresas – Gestión del Talento Humano</li>
-<li>Maestría en Finanzas y Gerencia Financiera</li>
-<li>Maestría en Derecho Constitucional</li>
-<li>Maestría en Derecho Civil</li>
-<li>Maestría en Derecho Penal</li>
-<li>Maestría en Derecho Tributario</li>
+<li>Política Comercial</li>
+<li>Integración Económica</li>
+<li>Negociaciones Comerciales Internacionales</li>
 </ul>
+</details>
+
+<details>
+<summary>Maestría en Administración de Empresas</summary>
+<ul>
+<li>Comercio Internacional</li>
+<li>Estrategia Empresarial</li>
+</ul>
+</details>
+
+<details>
+<summary>Maestría en Administración de Empresas – Gestión del Talento Humano</summary>
+<ul>
+<li>Comercio Internacional</li>
+<li>Integración Económica</li>
+</ul>
+</details>
+
+<details>
+<summary>Maestría en Finanzas y Gerencia Financiera</summary>
+<ul>
+<li>Economía Internacional</li>
+<li>Finanzas Internacionales</li>
+</ul>
+</details>
+
+<details>
+<summary>Maestría en Derecho Constitucional</summary>
+<ul>
+<li>Integración Regional</li>
+<li>Relaciones Internacionales</li>
+</ul>
+</details>
+
+<details>
+<summary>Maestría en Derecho Civil</summary>
+<ul>
+<li>Integración Regional</li>
+</ul>
+</details>
+
+<details>
+<summary>Maestría en Derecho Penal</summary>
+<ul>
+<li>Integración Regional</li>
+</ul>
+</details>
+
+<details>
+<summary>Maestría en Derecho Tributario</summary>
+<ul>
+<li>Política Comercial Internacional</li>
+</ul>
+</details>
 
 <p><strong>FAUTAPO – Universidad Autónoma Tomás Frías</strong></p>
-<ul>
-<li>Consultor – Facilitador de Diplomados con Trayecto a Maestría</li>
-<li>Docente de Programas de Maestría (2019 – presente)</li>
-</ul>
 
-<p><strong>Programas de Maestría impartidos</strong></p>
-
+<details>
+<summary>Diplomado en Investigación Social para el Desarrollo</summary>
 <ul>
-<li>Diplomado en Investigación Social para el Desarrollo</li>
-<li>Diplomado en Comercio Internacional</li>
+<li>Metodología de Investigación</li>
 </ul>
+</details>
+
+<details>
+<summary>Diplomado en Comercio Internacional</summary>
+<ul>
+<li>Integración Económica</li>
+<li>Política Comercial</li>
+</ul>
+</details>
 
 <p><strong>Academia Diplomática de Bolivia</strong></p>
+
+<details>
+<summary>Maestría en Diplomacia y Relaciones Internacionales</summary>
 <ul>
-<li>Miembro Titular del Consejo Académico</li>
-<li>Docente de Programas de Maestría (2020 – 2021)</li>
+<li>Integración Regional</li>
+<li>Política Comercial</li>
 </ul>
+</details>
 
-<p><strong>Programas de Maestría impartidos</strong></p>
 
-<ul>
-<li>Maestría en Diplomacia y Relaciones Internacionales</li>
-</ul>
-
-<p><strong>Universidad Nuestra Señora de La Paz</strong></p>
-<ul>
-<li>Docente Titular</li>
-<li>Docente de Asignaturas (2005 – 2006)</li>
-</ul>
-
-<p><strong>Programas impartidos</strong></p>
+<div class="titulo">Publicaciones Académicas</div>
 
 <ul>
-<li>Psicología Social</li>
-<li>Psicología de la Comunicación</li>
-<li>Teoría de Sistemas</li>
-</ul>
+<li>
+<a href="LINK_DEL_ARTICULO" target="_blank">
+Bolivia en el MERCOSUR: más allá de un mercado común – 2024
+</a>
+</li>
 
-<div class="titulo">Publicaciones</div>
+<li>
+<a href="LINK_DEL_ARTICULO" target="_blank">
+Bolivia y su adhesión al MERCOSUR – Revista Parlasur – 2024
+</a>
+</li>
 
-<ul>
-<li>Bolivia en el MERCOSUR: más allá de un mercado común – 2024</li>
-<li>Bolivia y su adhesión al MERCOSUR – Revista Parlasur – 2024</li>
-<li>Puerto Jennefer: un verdadero hito para el comercio exterior de Bolivia – 2021</li>
-<li>Logros y retos del comercio exterior boliviano – IBCE – 2022</li>
-<li>Impulsando la inserción comercial de América Latina: el rol de la ALADI – 2024</li>
+<li>
+<a href="LINK_DEL_ARTICULO" target="_blank">
+Puerto Jennefer: un verdadero hito para el comercio exterior de Bolivia – 2021
+</a>
+</li>
+
+<li>
+<a href="LINK_DEL_ARTICULO" target="_blank">
+Logros y retos del comercio exterior boliviano – IBCE – 2022
+</a>
+</li>
+
+<li>
+<a href="LINK_DEL_ARTICULO" target="_blank">
+Impulsando la inserción comercial de América Latina: el rol de la ALADI – 2024
+</a>
+</li>
 </ul>
 
 <div class="titulo">Formación Académica</div>
 
-<ul>
-<li>Maestría en Negociaciones Comerciales Internacionales – Universidad de Barcelona</li>
-<li>Maestría en Administración de Empresas – Universidad Loyola</li>
-<li>Maestría en Educación Superior – Universidad San Francisco Xavier</li>
-<li>Especialización Internacional en Formulación de Proyectos de Desarrollo Sostenible – Programa de las Naciones Unidas para el Desarrollo (PNUD) – INAGRO</li>
-<li>Diplomado en Educación Superior – Formación Basada en Competencias – Comité Ejecutivo de la Universidad Boliviana (CEUB)</li>
-<li>Diplomado Interculturalidad e Integración Educativa – Convenio Andrés Bello</li>
-<li>Diplomado Superior en Administración de Recursos Humanos – Universidad Loyola de Bolivia</li>
-<li>Diplomado Superior en Gestión y Competitividad –Universidad Loyola de Bolivia</li>
-<li>Diplomado Superior en Marketing Estratégico – Universidad Loyola de Bolivia</li>
-<li>Diplomado Superior en Gestión y Competitividad –Universidad Loyola de Bolivia</li>
-<li>Diplomado Superior en Marketing Estratégico – Universidad Loyola de Bolivia</li>
-<li>Diplomado en Administración Gerencial – Universidad de Aquino Bolivia (UDABOL)</li>
-<li>Diplomado en Telecomunicaciones y Redes – Universidad de Aquino Bolivia (UDABOL)</li>
-<li>Ingeniería de Sistemas – Universidad Católica Boliviana</li>
-</ul>
+<h3>Maestrías</h3>
+
+<details>
+<summary>Maestría en Negociaciones Comerciales Internacionales</summary>
+<p>Universidad de Barcelona</p>
+</details>
+
+<details>
+<summary>Maestría en Administración de Empresas</summary>
+<p>Universidad Loyola</p>
+</details>
+
+<details>
+<summary>Maestría en Educación Superior</summary>
+<p>Universidad San Francisco Xavier</p>
+</details>
+
+<h3>Formación de Grado</h3>
+
+<details>
+<summary>Ingeniería de Sistemas</summary>
+<p>Universidad Católica Boliviana</p>
+</details>
 
 <div class="titulo">Negociaciones Internacionales</div>
 
